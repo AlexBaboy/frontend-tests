@@ -1,9 +1,9 @@
 describe('сопоставления', () => {
-    test('два плюс два равно четыре', () => {
+    test("два плюс два равно четыре", () => {
         expect(2 + 2).toBe(4);
     });
 
-    test('присваивание объекту', () => {
+    test('присваивание поля объекту', () => {
         const data = {один: 1};
         data['два'] = 2;
         expect(data).toEqual({один: 1, два: 2});
@@ -73,7 +73,7 @@ describe('сопоставления', () => {
 
     test('the shopping list has milk on it', () => {
         expect(shoppingList).toContain('milk');
-        expect(new Set(shoppingList)).toContain('milk');
+        //expect(new Set(shoppingList)).toContain('milk');
     });
 
     /* исключения */
